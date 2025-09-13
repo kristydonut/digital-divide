@@ -1,4 +1,4 @@
-    /* ===== Fonts ===== */
+       /* ==================== Fonts ===================== */
     @font-face {
       font-family: 'Outfit';
       src: url('fonts/Outfit/Outfit-Regular.ttf') format('truetype');
@@ -13,7 +13,7 @@
       font-style: normal;
     }
 
-    /* ===== Base Styles ===== */
+        /* ==================== Base Styles ===================== */
     * {
       margin: 0;
       padding: 0;
