@@ -24,6 +24,8 @@
       font-family: 'Fira Sans', sans-serif;
       line-height: 1.6;
       color: #222;
+       box-shadow: 0 0 20px rgba(0,0,0,0.5); /* Horizontal offset, vertical offset, blur, color */
+
     }
 
     h1, h2, h3, h4, h5, h6 {
@@ -207,9 +209,13 @@
     align-items: flex-start;
     max-width: 1200px;
     margin: 4rem auto;
-    padding: 2rem;
+    padding: 3rem 2rem;
     gap: 3rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
 }
+
 
 .definition_img {
     width: 400px;
@@ -249,8 +255,80 @@
 }
 
 /* ==================== Real World Examples Section ===================== */
+    .examples {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 2rem;
+        }
 
+        .examples_content {
+            display: flex;
+            flex-direction: column;
+        }
 
+        .examples_title {
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin-bottom: 3rem;
+            letter-spacing: -2px;
+            line-height: 1.1;
+            color: #333;
+            text-align: center;
+        }
+
+        .examples_grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        .example_item {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+            border: 1px solid #f0f0f0;
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+        }
+
+        /* Special styling for the 5th item (Social Inequalities) to span full width */
+        .example_item:nth-child(5) {
+            grid-column: 1 / -1; /* Span across all columns */
+            max-width: 600px; /* Limit width to match other items */
+            justify-self: center; /* Center it in the grid */
+        }
+
+        .example_icon {
+            font-size: 2.5rem;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f8f9fa;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        .example_content {
+            flex: 1;
+        }
+
+        .example_title {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 0.8rem;
+            color: #333;
+        }
+
+        .example_text {
+            font-size: 0.95rem;
+            line-height: 1.7;
+            color: #555;
+            text-align: justify;
+        }
 
     /* ===== Responsive ===== */
     @media (max-width: 768px) {
@@ -297,7 +375,31 @@
     .definition_text {
       text-align: left;
     }
-    }
+    
+  .examples {
+    padding: 1rem;
+  }
+
+  .examples_title {
+    font-size: 2.5rem;
+  }
+
+  .examples_grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .example_item {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .example_icon {
+    align-self: center;
+  }
+
+ }
   
 @media (max-width: 480px) {
     .navbar {
