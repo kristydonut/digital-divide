@@ -58,3 +58,70 @@
 .references a:hover {
   text-decoration: underline;
 }
+
+.digital-divide-today{
+    background-color: #f5f5ff;
+}
+
+.mission {
+  padding: 60px 20px;
+  background: #fff;
+}
+
+.mission-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.mission-text {
+  flex: 1;
+  min-width: 300px;
+  margin-left: 50px;
+}
+
+.mission-text h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #800000;
+}
+
+.mission-text p {
+  font-size: 1.5rem;
+  color: #000000;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.mission-text ul {
+  list-style: none;
+  padding: 0;
+}
+
+.mission-text li {
+  margin-bottom: 12px;
+  font-size: 18px;
+  color: #1f2937;
+  display: flex;
+  align-items: center;
+}
+
+.mission-image {
+  flex: 1;
+  min-width: 300px;
+  margin-right: 70px;
+}
+
+.mission-image img {
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.check-icon{
+    object-fit: contain;
+    max-height: 20px;
+    margin-right: 10px;
+}
