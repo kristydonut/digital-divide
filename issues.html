@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CIPHER</title>
-    <link rel="stylesheet" href="style/aboutus.css">
+    <link rel="stylesheet" href="style/issues.css">
 </head>
 <body>
       <!-- Navbar -->
@@ -29,26 +29,139 @@
     </div>
   </header>
 
-  <!------------------ Hero Section ------------------>
-  <section class="hero">
-
-    <!-- Background Video -->
-    <video class="hero_background" autoplay muted loop>
-      <source src="style/videos/landing.mp4" type="video/mp4">
-    </video>
-
-    <h1 class="hero_title">Issues to legit</h1>
-    <p class="hero_subtitle">
-      We believe technology should be accessible to everyone, everywhere. 
-      Our mission is to break down barriers and create digital opportunities 
-      for communities worldwide.
-    </p>
-    <div class="hero_actions">
-      <a href="#" class="btn btn--primary">Explore</a>  
-      <a href="#" class="btn btn--outline">Learn</a>
+  <!-- Issues Intro -->
+  <section class="issues-intro">
+    <div class="issues-intro-inner">
+      <h1>Understanding the Issues</h1>
+      <p>
+      The digital divide does not only exist as a definition — it affects people in real ways.
+      On this page, we explore the struggles, causes, statistics, and impacts that highlight
+      the seriousness of this issue.
+      </p>
     </div>
   </section>
-  
+
+  <!-- Real Life Problems -->
+  <section class="samples">
+    <div class="slider">
+
+      <!-- radios (state controllers) -->
+      <input type="radio" name="slides" id="s1" checked>
+      <input type="radio" name="slides" id="s2">
+      <input type="radio" name="slides" id="s3">
+      <input type="radio" name="slides" id="s4">
+      <input type="radio" name="slides" id="s5">
+
+      <!-- slides wrapper -->
+      <div class="slides">
+
+        <!-- Slide 1 -->
+        <div class="slide" style="background-image:url('style/images/sample-education3.png');">
+          <!-- left/right labels inside this slide -->
+          <label class="slide-nav left" for="s5" aria-hidden="true"></label>
+          <label class="slide-nav right" for="s2" aria-hidden="true"></label>
+
+          <div class="overlay"></div>
+
+          <div class="slide-content">
+            <p>According to DICT data as of September 2022, only 1.8 percent of 47,421 public schools 
+              nationwide had access to free Wi-Fi, with the quality and speed of connections varying significantly, 
+              limiting student’s access to educational materials like books, articles, videos, journals 
+              and e-learning modules</p>
+            <a href="https://www.philstar.com/business/2024/07/21/2371656/government-urged-improve-internet-connectivity-schools" target="_blank" class="btn-readmore">Read More</a>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="slide" style="background-image:url('style/images/sample-woman.png');">
+          <label class="slide-nav left" for="s1" aria-hidden="true"></label>
+          <label class="slide-nav right" for="s3" aria-hidden="true"></label>
+
+          <div class="overlay"></div>
+
+          <div class="slide-content">
+            <p>At most, women find online work a little more of a challenge in most rural locations due to 
+              the lack of access to devices and unreliable electricity. Some still use basic phones instead of 
+              smartphones, while others have to travel far just to get a good internet connection. Even when given 
+              online jobs, they are often assigned easier tasks and get paid less. This is an indication that 
+              women in the rural areas have further challenges in digital opportunities.</p>
+            <a href="https://www.pids.gov.ph/details/news/press-releases/cultural-barriers-gender-disparities-drive-rural-women-s-digital-exclusion" target="_blank" class="btn-readmore">Read More</a>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="slide" style="background-image:url('style/images/sample-education2.png');">
+          <label class="slide-nav left" for="s2" aria-hidden="true"></label>
+          <label class="slide-nav right" for="s4" aria-hidden="true"></label>
+
+          <div class="overlay"></div>
+
+          <div class="slide-content">
+            <p>The digital divide poses challenges to students in the field of education. In rural settings, 
+              most people only use mobile data, have poor connections and lack digital literacy. All 40 students 
+              at Kawayan IS said that poor digital access has a strong impact on them, making learning more 
+              challenging and restricting their access to the full potential of online learning.</p>
+            <a href="https://doi.org/10.5281/8zgcwt10" target="_blank" class="btn-readmore">Read More</a>
+          </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="slide" style="background-image:url('style/images/sample-healthcare.png');">
+          <label class="slide-nav left" for="s3" aria-hidden="true"></label>
+          <label class="slide-nav right" for="s5" aria-hidden="true"></label>
+
+          <div class="overlay"></div>
+
+          <div class="slide-content">
+            <p>Philippine patients reported that they found it hard to use digital health services due to the 
+              poor internet connection. Calls were ineffective, or sometimes disconnected, even in critical 
+              conversations with doctors, which made them frustrated. Some other people did not have sufficient 
+              mobile load, good cameras, or appropriate devices so that it was not easy to participate in the 
+              consultation. These struggles demonstrate that not all people can maximize the use of digital 
+              health services.</p>
+            <a href="https://doi.org/10.1186/s12913-023-09127-x" target="_blank" class="btn-readmore">Read More</a>
+          </div>
+        </div>
+
+        <!-- Slide 5 -->
+        <div class="slide" style="background-image:url('style/images/sample-internet.png');">
+          <label class="slide-nav left" for="s4" aria-hidden="true"></label>
+          <label class="slide-nav right" for="s1" aria-hidden="true"></label>
+
+          <div class="overlay"></div>
+
+          <div class="slide-content">
+            <p>A lot of families in the Philippines still struggle to get internet at home. According to a 
+              PSA survey, 41.7% said internet subscriptions are too expensive, while 33.2% said the cost 
+              of equipment like computers or smartphones is also a problem. On top of that, 29.5% of respondents 
+              admitted they don’t know how to use the internet, which also keeps them from being connected.</p>
+            <a href="https://businessmirror.com.ph/2025/07/23/survey-costly-devices-fees-limit-internet-access-in-phl/" target="_blank" class="btn-readmore">Read More</a>
+          </div>
+        </div>
+
+      </div> <!-- .slides -->
+
+      <!-- dots -->
+      <div class="navigation" aria-hidden="true">
+        <label for="s1" class="bar"></label>
+        <label for="s2" class="bar"></label>
+        <label for="s3" class="bar"></label>
+        <label for="s4" class="bar"></label>
+        <label for="s5" class="bar"></label>
+      </div>
+
+    </div>
+  </section>  
+
+  <!-- Causes -->
+  <section class="issues-intro">
+    <div class="issues-intro-inner">
+      <h1>Causes of Digital Divide</h1>
+      <p>
+      placeholder section
+      </p>
+    </div>
+  </section>
 
 </body>
 </html>
