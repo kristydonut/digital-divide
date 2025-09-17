@@ -1,5 +1,60 @@
-.logo_image{
-    max-width: 50px;
-    max-height: 50px;
-    object-fit: contain;
+.digital-divide-today {
+  text-align: center;
+  padding: 60px 20px;
+  background: #f9fbfd;
+}
+
+.digital-divide-today h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #111827;
+}
+
+.digital-divide-today p {
+  color: #4b5563;
+  margin-bottom: 40px;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.stat-item {
+  max-width: 250px;
+}
+
+.stat-item .icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+.stat-item h3 {
+  font-size: 26px;
+  font-weight: bold;
+  color: #111827;
+}
+
+.stat-item p {
+  color: #4b5563;
+  font-size: 14px;
+}
+
+.references {
+  margin-top: 40px;
+  font-size: 14px;
+  color: #374151;
+}
+
+.references a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.references a:hover {
+  text-decoration: underline;
 }
