@@ -11,29 +11,39 @@
 </head>
 
 <body>
-    <!------------------ Navbar ------------------>
-    <header>
-        <div class="navbar">
-            <div class="navbar_logo">
-                <a href="index.html" class="logo_link">
-                    <div class="navbar_logo-icon">
-                        <img class="logo_image" src="style/images/cipher-logo2.png" alt="CIPHER Logo">
-                    </div>
-                    <span class="logo_text">CIPHER</span>
-                </a>
-            </div>
-
-           <div class="navbar_right">
-        <nav class="navbar_links">
-          <a href="index.html">Home</a>
-          <a href="issues.html">Issues</a>
-          <a href="resources.html">Resources</a>
-          <a href="solutions.html">Solutions</a>
-          <a href="aboutus.html">About</a>
-        </nav>
-        <a href="contact-us.html" class="navbar_cta">Contact Us</a>
+    <!-- Navbar -->
+  <header>
+    <nav>
+      <input id="nav-toggle" type="checkbox">
+      
+      <!-- Logo Section -->
+      <div class="navbar_logo logo">
+        <a href="index.html" class="logo_link">
+          <div class="navbar_logo-icon">
+            <img class="logo_image" src="style/images/cipher-logo2.png" alt="CIPHER Logo">
+          </div>
+          <span class="logo_text">CIPHER</span>
+        </a>
       </div>
-    </header>
+
+      <!-- Links Section -->
+      <ul class="links navbar_links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="issues.html">Issues</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="solutions.html">Solutions</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="contactus.html" class="active" id="navbar_cta">Contact Us</a></li>
+      </ul>
+
+      <!-- Hamburger Icon -->
+      <label for="nav-toggle" class="icon-burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </label>
+    </nav>
+  </header>
 
 
     <!----------------- Contact Us ------------------>
