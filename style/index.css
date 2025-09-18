@@ -228,9 +228,10 @@
 
 /* Encouraging Section */
 .encouraging {
-  padding: 60px 20px;
+  padding: 150px 40px;
   background: #852525;
   text-align: center;
+  margin: 0;
 }
 
 .encouraging h2 {
@@ -238,7 +239,7 @@
   font-weight: bold;
   margin-bottom: 15px;
   color: #ffffff;
-  margin-bottom: 30px;
+  margin-bottom: 30px
 }
 
 .encouraging .container p{
@@ -259,21 +260,21 @@
   gap: 1rem;
 }
 
-    .learn-btn {
+.learn-btn {
       background: #fff;
       color: #000;
-    }
+}
 
-    .learn-btn:hover {
+.learn-btn:hover {
       background: #e6e6e6;
-    }
+}
 
-    .resources-btn {
+.resources-btn {
       border: 1px solid #fff;
       background: transparent;
       color: #fff;
-    }
+}
 
-    .resources-btn:hover {
+.resources-btn:hover {
       background: rgba(255, 255, 255, 0.1);
     }
