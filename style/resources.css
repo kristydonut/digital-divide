@@ -42,6 +42,7 @@
   display: flex;
   justify-content: center;
   gap: 15px;
+  margin-bottom: 0px;
 }
 
 .btn {
@@ -74,9 +75,6 @@
 }
 
 
-
-
-
 /* Resources Section */
 .resources {
   text-align: center;
@@ -85,11 +83,8 @@
   margin: auto;
 }
 
-.section-label {
-  font-size: 0.9rem;
-  font-weight: bold;
-  color: #666;
-  margin-bottom: 10px;
+.resources .section-label{
+  color: #727171;
 }
 
 .resources h2 {
@@ -104,10 +99,10 @@
   margin-bottom: 50px;
 }
 
-/* Grid Layout */
+/* Grid Layout - flexible and responsive */
 .resource-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 25px;
 }
 
@@ -121,6 +116,11 @@
   flex-direction: column;
   text-align: left;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resource-card .resource-content .resource-link {
+  font-weight: lighter;
+  color: rgb(66, 66, 66);
 }
 
 .resource-card:hover {
@@ -137,8 +137,9 @@
 }
 
 .resource-img img {
-  max-height: 80px;
-  opacity: 0.6;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /*image fit inside container*/
 }
 
 .resource-content {
@@ -175,3 +176,4 @@
 .resource-content a:hover {
   color: #444;
 }
+
