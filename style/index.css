@@ -77,7 +77,7 @@
     .issues-btn {
     font-weight:bold;
       background: #fff;
-      color: #800000;
+      color: #020202;
     }
 
     .issues-btn:hover {
@@ -178,11 +178,11 @@
 .mission-text {
   flex: 1;
   min-width: 300px;
-  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .mission-text h2 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: bold;
   margin-bottom: 15px;
   color: #800000;
@@ -192,7 +192,9 @@
   font-size: 1.5rem;
   color: #000000;
   margin-bottom: 20px;
+  margin-right: 20px;
   line-height: 1.6;
+  
 }
 
 .mission-text ul {
@@ -211,7 +213,8 @@
 .mission-image {
   flex: 1;
   min-width: 300px;
-  margin-right: 70px;
+  margin-left: 70px;
+
 }
 
 .mission-image img {
@@ -228,9 +231,10 @@
 
 /* Encouraging Section */
 .encouraging {
-  padding: 60px 20px;
+  padding: 150px 40px;
   background: #852525;
   text-align: center;
+  margin: 0;
 }
 
 .encouraging h2 {
@@ -238,7 +242,6 @@
   font-weight: bold;
   margin-bottom: 15px;
   color: #ffffff;
-  margin-bottom: 30px;
 }
 
 .encouraging .container p{
@@ -259,21 +262,21 @@
   gap: 1rem;
 }
 
-    .learn-btn {
+.learn-btn {
       background: #fff;
       color: #000;
-    }
+}
 
-    .learn-btn:hover {
+.learn-btn:hover {
       background: #e6e6e6;
-    }
+}
 
-    .resources-btn {
+.resources-btn {
       border: 1px solid #fff;
       background: transparent;
       color: #fff;
-    }
+}
 
-    .resources-btn:hover {
+.resources-btn:hover {
       background: rgba(255, 255, 255, 0.1);
     }

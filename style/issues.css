@@ -398,7 +398,7 @@ input[type="radio"] {
   font-style: italic;
   text-align: center;
   margin-top: 0.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .stats_chart-card {
@@ -445,7 +445,12 @@ input[type="radio"] {
   margin-bottom: 1rem;
 }
 
-.chart_caption {
+.source:hover {
+  text-decoration: underline;
+  color: #555; 
+}
+
+#chart_source {
   font-size: 0.9rem;
   color: #777;
   font-style: italic;
@@ -469,7 +474,7 @@ input[type="radio"] {
   position: relative;
 }
 
-.table_source {
+#table_source {
   font-size: 0.85rem;
   color: #777;
   font-style: italic;
@@ -546,4 +551,153 @@ input[type="radio"] {
     font-size: 0.9rem;
     padding: 0.8rem;
   }
+}
+
+/* ==================== Impact Section ===================== */
+.impact_content {
+  padding-bottom: 3rem;
+}
+
+.impact_title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 2.5rem;
+  letter-spacing: -2px;
+  line-height: 1.1;
+  color: #333;
+  text-align: center;
+}
+
+/* Impact Cards Layout */
+.impact_cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.impact_card {
+  position: relative;
+  width: 280px;
+  height: 350px;
+  overflow: hidden;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* Default shadow */
+  transition: transform 0.5s ease, box-shadow 0.5s ease; /* Add shadow transition */
+}
+
+.impact_card_image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.5s ease;
+}
+
+/* Dark overlay layer */
+.impact_card_overlay_layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  transition: background-color 0.5s ease;
+  z-index: 1;
+}
+
+/* Text overlay */
+.impact_card_overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  z-index: 2;
+  color: #fff;
+}
+
+.impact_card_title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.impact_card_description {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* Hover Effects */
+.impact_card:hover {
+  transform: translateY(-10px); /* Floating effect */
+  box-shadow: 0 15px 25px rgba(0,0,0,0.35); /* Floating shadow */
+}
+
+.impact_card:hover .impact_card_image {
+  transform: scale(1.1); /* Zoom in image */
+}
+
+.impact_card:hover .impact_card_overlay_layer {
+  background-color: rgba(0,0,0,0.6); /* Slightly darker overlay */
+}
+
+/* ==================== Impact Section ===================== */
+.explore_more {
+  padding: 75px 40px;
+  background: #852525;
+  text-align: center;
+  margin: 0;
+}
+
+.explore_more h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #ffffff;
+  margin-bottom: 30px
+}
+
+.explore_more .container p{
+  font-size: 1.2rem;
+  color: #f0f0f0;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.btn {
+  border-radius: 0px;
+  padding: 0.8rem 2rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.explore_more_actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.exp-btn {
+  background: #fff;
+  color: #000;
+}
+
+.exp-btn:hover {
+  background: #e6e6e6;
+}
+
+.resources-btn {
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+}
+
+.resources-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
 }
