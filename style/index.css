@@ -178,11 +178,11 @@
 .mission-text {
   flex: 1;
   min-width: 300px;
-  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .mission-text h2 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: bold;
   margin-bottom: 15px;
   color: #800000;
@@ -192,7 +192,9 @@
   font-size: 1.5rem;
   color: #000000;
   margin-bottom: 20px;
+  margin-right: 20px;
   line-height: 1.6;
+  
 }
 
 .mission-text ul {
@@ -211,7 +213,8 @@
 .mission-image {
   flex: 1;
   min-width: 300px;
-  margin-right: 70px;
+  margin-left: 70px;
+
 }
 
 .mission-image img {
@@ -239,7 +242,6 @@
   font-weight: bold;
   margin-bottom: 15px;
   color: #ffffff;
-  margin-bottom: 30px
 }
 
 .encouraging .container p{
