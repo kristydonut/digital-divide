@@ -7,26 +7,30 @@
   <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-  <!-- Navbar -->
+   <!------------------ Navbar ------------------>
   <header>
     <div class="navbar">
 
+
       <div class="navbar_logo">
-        <!-- Replace with Actual Image of the Logo -->
-        <div class="navbar_logo-icon">C</div>
-        <span>CIPHER</span>
+        <a href="index.html" class="logo_link">
+          <div class="navbar_logo-icon">
+            <img class="logo_image" src="style/images/logo.png" alt="CIPHER Logo">
+          </div>
+          <span class="logo_text">CIPHER</span>
+        </a>
       </div>
-      <!-- Navbar -->
-      <nav class="navbar_links">
-        <a href="#definition">About</a>
-        <a href="#examples">Examples</a>
-        <a href="#">Issues</a>
-        <a href="#">Resources</a>
-        <a href="#">Solutions</a>
-      </nav>
-      <!-- Call to Action for Contact Us -->
-      <a href="#" class="navbar_cta">Contact Us</a>
-    </div>
+
+      <div class="navbar_right">
+        <nav class="navbar_links">
+          <a href="index.html">Home</a>
+          <a href="issues.html">Issues</a>
+          <a href="#">Resources</a>
+          <a href="#">Solutions</a>
+          <a href="aboutus.html">About</a>
+        </nav>
+        <a href="#contact" class="navbar_cta">Contact Us</a>
+      </div>
   </header>
 
   <!------------------ Hero Section ------------------>
@@ -34,25 +38,25 @@
 
     <!-- Background Video -->
     <video class="hero_background" autoplay muted loop>
-      <source src="style/landing.mp4" type="video/mp4">
+      <source src="style/videos/landing.mp4" type="video/mp4">
     </video>
 
     <h1 class="hero_title">Bridging the gap in digital access, one story at a time</h1>
     <p class="hero_subtitle">
       We believe technology should be accessible to everyone, everywhere. 
-      Our mission is to break down barriers and create digital opportunities 
+      Our mission is to break down barriers and create digital opportunities
       for communities worldwide.
-    </p>
+    </p> 
     <div class="hero_actions">
-      <a href="#" class="btn btn--primary">Explore</a>  
-      <a href="#" class="btn btn--outline">Learn</a>
+      <a href="issues.html" class="btn btn--primary">Explore Issues</a>  
+      <a href="solutions.html" class="btn btn--outline">Learn Solutions</a>
     </div>
   </section>
 
 
 <!------------------ Digital Divide Definition Section ------------------>
     <section class="definition" id = "definition" >
-        <img class="definition_img" src="style/digital divide.png" alt="Digital Divide Illustration">
+        <img class="definition_img" src="style/images/digital divide.png" alt="Digital Divide Illustration">
         <!-- image can/should be changed-->
         <div class="definition_content">
             <h1 class="definition_title">What is <span class="highlight">Digital Divide?</span></h1>
