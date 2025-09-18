@@ -19,7 +19,7 @@
 }
 
 .hero-content h1 {
-  font-size: 6rem;
+  font-size: 4rem;
   font-weight: bold;
   margin-bottom: 20px;
   line-height: 1.3;
@@ -27,14 +27,11 @@
 }
 
 .hero-content p {
-  min-width: 100px;
-  padding: 20px 20px;
+  padding: 20px 200px;
   font-size: 1.1rem;
-  margin-bottom: 30px;
+  margin: 30px;
   color: #000000;
 }
-
-
 
 
 /* Buttons */
@@ -85,6 +82,7 @@
 
 .resources .section-label{
   color: #727171;
+  margin-bottom: 20px;
 }
 
 .resources h2 {
@@ -177,3 +175,45 @@
   color: #444;
 }
 
+/* Benefits Section */
+.benefits {
+  font-size: 2rem;
+  padding: 80px 40px;
+  background: #f9f9f9;
+  text-align: center
+}
+
+.benefits h6 {
+  font-size: 1.2rem;
+  font-weight: lighter;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.container {
+  display: flex;
+  margin: 50px;
+
+}
+
+.trusted-content h5{
+  display: flex;
+  justify-content: start;
+  font-weight: lighter;
+  font-size: 1.3rem;
+  color: #444;
+  text-align: left;
+}
+
+.trusted-content h2{
+  display: flex;
+  font-size: 2rem;
+}
+
+.trusted-content p{
+  display: flex;
+  justify-content: flex-start;
+  
+  font-size: 1rem;
+  text-align: left;
+}
