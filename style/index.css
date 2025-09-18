@@ -1,98 +1,98 @@
 /* ==================== Hero Section ===================== */
-    .hero {
-      height: 100vh;
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 0 1rem;
-      color: #fff;
-      margin-top: 70px; /* offset for fixed navbar */
-      overflow: hidden;
-    }
+.hero {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+  color: #fff;
+  margin-top: 70px; /* offset for fixed navbar */
+  overflow: hidden;
+}
 
-    .hero::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.5); /* dark overlay */
-      z-index: 1;
-    }
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* dark overlay */
+  z-index: 1;
+}
 
-    /* Hero Background */
-    .hero_background {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      z-index: 0;
-    }
+/* Hero Background */
+.hero_background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
 
-    .hero_title,
-    .hero_subtitle,
-    .hero_actions {
-      position: relative;
-      z-index: 2;
-    }
+.hero_title,
+.hero_subtitle,
+.hero_actions {
+  position: relative;
+  z-index: 2;
+}
 
-    /* Hero Title */
-    .hero_title {
-      font-size: 5rem;
-      font-weight: bold;
-      margin-bottom: 2rem;
-      letter-spacing: -3px;
-      line-height: 0.9;
-      max-width: 1100px;
-    }
+/* Hero Title */
+.hero_title {
+  font-size: 5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  letter-spacing: -3px;
+  line-height: 0.9;
+  max-width: 1100px;
+}
 
-    /* Hero Subtitle */
-    .hero_subtitle {
-      font-size: 1.2rem;
-      max-width: 750px;
-      margin-bottom: 2rem;
-      line-height: 1.5;
-      color: #e0e0e0;
-    }
+/* Hero Subtitle */
+.hero_subtitle {
+  font-size: 1.2rem;
+  max-width: 750px;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+  color: #e0e0e0;
+}
 
-    .hero_actions {
-      display: flex;
-      gap: 1rem;
-    }
+.hero_actions {
+  display: flex;
+  gap: 1rem;
+}
 
-    /* Buttons */
-    .btn {
-      padding: 0.8rem 2rem;
-      font-size: 0.9rem;
-      cursor: pointer;
-      transition: all 0.3s ease;
-    }
+/* Buttons */
+.btn {
+  padding: 0.8rem 2rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
 
-    .issues-btn {
-    font-weight:bold;
-      background: #fff;
-      color: #020202;
-    }
+.issues-btn {
+  font-weight: bold;
+  background: #fff;
+  color: #020202;
+}
 
-    .issues-btn:hover {
-      background: #e6e6e6;
-    }
+.issues-btn:hover {
+  background: #e6e6e6;
+}
 
-    .solutions-btn {
-      border: 1px solid #fff;
-      background: transparent;
-      color: #fff;
-    }
+.solutions-btn {
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+}
 
-    .solutions-btn:hover {
-      background: rgba(255, 255, 255, 0.1);
-    }
+.solutions-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
 
 /* Landing Page */
 .digital-divide-today {
@@ -156,10 +156,9 @@
   text-decoration: underline;
 }
 
-.digital-divide-today{
-    background-color: #f5f5ff;
+.digital-divide-today {
+  background-color: #f5f5ff;
 }
-
 
 /* Mission Section */
 .mission {
@@ -194,7 +193,6 @@
   margin-bottom: 20px;
   margin-right: 20px;
   line-height: 1.6;
-  
 }
 
 .mission-text ul {
@@ -214,20 +212,18 @@
   flex: 1;
   min-width: 300px;
   margin-left: 70px;
-
 }
 
 .mission-image img {
   width: 100%;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.check-icon{
-    object-fit: contain;
-    max-height: 20px;
-    margin-right: 10px;
+.check-icon {
+  object-fit: contain;
+  max-height: 20px;
+  margin-right: 10px;
 }
-
 
 /* Encouraging Section */
 .encouraging {
@@ -244,16 +240,16 @@
   color: #ffffff;
 }
 
-.encouraging .container p{
-    font-size: 1.2rem;
-    color: #f0f0f0;
-    margin-bottom: 20px;
-    line-height: 1.6;
-    text-align: center;
+.encouraging .container p {
+  font-size: 1.2rem;
+  color: #f0f0f0;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  text-align: center;
 }
 
 .btn {
-    border-radius: 0px;
+  border-radius: 0px;
 }
 
 .encouraging_actions {
@@ -263,20 +259,102 @@
 }
 
 .learn-btn {
-      background: #fff;
-      color: #000;
+  background: #fff;
+  color: #000;
 }
 
 .learn-btn:hover {
-      background: #e6e6e6;
+  background: #e6e6e6;
 }
 
 .resources-btn {
-      border: 1px solid #fff;
-      background: transparent;
-      color: #fff;
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
 }
 
 .resources-btn:hover {
-      background: rgba(255, 255, 255, 0.1);
-    }
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/*========================= ANIMATION ================================*/
+
+/* ------- Auto Show (pop up ganyun) ------- */
+@keyframes autoShowAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(200px) scale(0.3);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.stat-item,
+.references,
+.digital-divide-today h2,
+.digital-divide-today p,
+.mission-text h2,
+.mission-text p,
+.mission-text ul {
+  animation: autoShowAnimation both;
+  animation-timeline: view(70% 5%);
+}
+
+/* ------- Fade In (sa left to right side pero wala timeline tho) ------- */
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+		transform: translateX(-50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+.hero_title,
+.hero_subtitle {
+  animation: fadeIn 2s cubic-bezier(0.64, 0, 0.78, 0) 0s 1 normal both;
+}
+
+/* ------- Side Bottom (pop up from the bottm pero wala timeline tho) ------- */
+
+@keyframes slideBottom {
+	0% {
+		opacity: 0;
+		transform: translateY(250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.hero_actions {
+  animation: slideBottom 2s cubic-bezier(0.64, 0, 0.78, 0) 0s 1 normal both;
+}
+
+/* ------- Rool from the left into right side ------- */
+@keyframes rollSlide {
+  from {
+    opacity: 0;
+    transform: translateX(-200px) rotate(-90deg) scale(0.5);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0) rotate(0deg) scale(1);
+  }
+}
+
+.mission-image {
+  animation: rollSlide both;
+  animation-timeline: view(70% 5%);
+}
+
