@@ -805,8 +805,6 @@ a {
         margin-bottom: 1.5rem;
         background: linear-gradient(45deg, #fff, #f0f9ff, #ddd6fe);
         background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
         animation: titleBounce 2s ease-out;
     }
     
@@ -949,8 +947,6 @@ a {
         font-weight: 800;
         background: linear-gradient(135deg, #ff6b6b, #feca57);
         background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
         font-family: 'Space Grotesk', sans-serif;
     }
     
@@ -1027,8 +1023,6 @@ a {
         margin-bottom: 16px;
         background: linear-gradient(135deg, #667eea, #764ba2);
         background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
     }
 
     .mission-title {
@@ -1138,8 +1132,7 @@ a {
         letter-spacing: -1px;
         background: linear-gradient(135deg, #1a1a2e 0%, #667eea 100%);
         background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+
     }
     
     .overview_intro {
@@ -1319,8 +1312,6 @@ a {
     .team_member:hover .member_name {
         background: linear-gradient(135deg, #feca57, #ff6b6b);
         background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
     }
     
     .member_role {
