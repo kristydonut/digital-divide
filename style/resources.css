@@ -255,3 +255,68 @@
   height: auto;
   border-radius: 10px;
 }
+
+
+/* FAQs Section */
+.faqs h2{
+  font-size: 2rem;
+  max-width: 800px;
+  padding-top: 100px;
+  margin: auto;
+  text-align: center;
+}
+
+.faqs h6{
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.faqs-container {
+  max-width: 800px;
+  margin: auto;
+  text-align: left;
+}
+
+.faqs-container .faq-item{
+  margin-bottom: 100px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 15px;
+}
+
+
+/* Call to Action Section */
+.cta {
+  background: #852525;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.cta h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.cta p{
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+}
+
+.contact-btn {
+  background: white;
+  color: #852525;
+  padding: 15px 40px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.contact-btn:hover {
+  background: #f0f0f0;
+  color: #da1414;
+}
