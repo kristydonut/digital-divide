@@ -81,8 +81,12 @@
 }
 
 .resources .section-label{
-  color: #727171;
-  margin-bottom: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #852525;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
 }
 
 .resources h2 {
@@ -177,43 +181,77 @@
 
 /* Benefits Section */
 .benefits {
-  font-size: 2rem;
-  padding: 80px 40px;
+  padding: 60px 20px;
   background: #f9f9f9;
-  text-align: center
+  text-align: center;
 }
 
 .benefits h6 {
-  font-size: 1.2rem;
-  font-weight: lighter;
-  margin-bottom: 15px;
-  color: #444;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #852525;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
 }
 
-.container {
-  display: flex;
-  margin: 50px;
-
-}
-
-.trusted-content h5{
-  display: flex;
-  justify-content: start;
-  font-weight: lighter;
-  font-size: 1.3rem;
-  color: #444;
-  text-align: left;
-}
-
-.trusted-content h2{
-  display: flex;
+.benefits h2 {
   font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #222;
 }
 
-.trusted-content p{
+/* Container for the cards */
+.benefits .container {
   display: flex;
-  justify-content: flex-start;
-  
-  font-size: 1rem;
+  justify-content: center;
+  align-items: stretch;
+  gap: 30px;
+  flex-wrap: wrap; /* makes it responsive */
+  margin: 30px;
+}
+
+/* Individual benefit card */
+.benefit-card {
+  flex: 1 1 300px;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefit-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.benefit-card h5 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #852525;
+  margin-bottom: 5px;
+}
+
+.benefit-card h2 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.benefit-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: auto;
+  color: #555;
+}
+
+.benefit-card img {
+  margin-top: 20px;
+  height: 200px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
