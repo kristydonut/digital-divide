@@ -1,5 +1,5 @@
 /* Hero Section */
-.hero {
+#hero {
   padding-bottom: 5px;
   position: relative;
   height: 100vh;
@@ -10,7 +10,7 @@
   overflow: hidden;
 }
 
-.hero-content {
+#hero .hero-content {
   padding: 10px 40px;
   border-radius: 25px;
   text-align: center;
@@ -18,7 +18,7 @@
   color: white;
 }
 
-.hero-content h1 {
+#hero .hero-content h1 {
   font-size: 4rem;
   font-weight: bold;
   margin-bottom: 20px;
@@ -26,7 +26,7 @@
   color: rgb(0, 0, 0);
 }
 
-.hero-content p {
+#hero .hero-content p {
   padding: 20px 200px;
   font-size: 1.1rem;
   margin: 30px;
@@ -73,14 +73,14 @@
 
 
 /* Resources Section */
-.resources {
+#resources {
   text-align: center;
   padding: 80px 40px;
   max-width: 1200px;
   margin: auto;
 }
 
-.resources .section-label{
+#resources .section-label{
   font-size: 0.9rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -89,13 +89,13 @@
   letter-spacing: 1px;
 }
 
-.resources h2 {
+#resources h2 {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 15px;
 }
 
-.section-subtitle {
+#resources .section-subtitle {
   color: #666;
   font-size: 1rem;
   margin-bottom: 50px;
@@ -180,13 +180,13 @@
 }
 
 /* Benefits Section */
-.benefits {
+#benefits {
   padding: 60px 20px;
   background: #f9f9f9;
   text-align: center;
 }
 
-.benefits h6 {
+#benefits h6 {
   font-size: 0.9rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -195,7 +195,7 @@
   letter-spacing: 1px;
 }
 
-.benefits h2 {
+#benefits h2 {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 40px;
@@ -203,7 +203,7 @@
 }
 
 /* Container for the cards */
-.benefits .container {
+#benefits .container {
   display: flex;
   justify-content: center;
   align-items: stretch;
@@ -258,15 +258,17 @@
 
 
 /* FAQs Section */
-.faqs h2{
+#faqs h2{
   font-size: 2rem;
   max-width: 800px;
   padding-top: 100px;
+  padding-bottom: 10px;
   margin: auto;
   text-align: center;
+
 }
 
-.faqs h6{
+#faqs h6{
   font-size: 1rem;
   color: #666;
   margin-bottom: 50px;
@@ -287,19 +289,19 @@
 
 
 /* Call to Action Section */
-.cta {
+#cta {
   background: #852525;
   color: white;
   text-align: center;
   padding: 80px 20px;
 }
 
-.cta h2 {
+#cta h2 {
   font-size: 2.5rem;
   margin-bottom: 15px;
 }
 
-.cta p{
+#cta p{
   font-size: 1.2rem;
   margin-bottom: 25px;
   padding-bottom: 20px;
