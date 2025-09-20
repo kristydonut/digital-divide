@@ -329,6 +329,12 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
+
+
+
+
+
+
 /* ==================== MOBILE YOUTHFUL THEME (768px and below) ===================== */
 @media (max-width: 768px) {
   
@@ -379,7 +385,12 @@
     margin-bottom: 1rem;
   }
 
-  /* ==================== Cards Mobile ===================== */
+   /* ==================== Resources Section Mobile ===================== */
+  #resources .section-subtitle{
+    color: #ffffff;
+  }
+
+  /* ==================== Benefits Section Mobile ===================== */
   .benefit-card {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
@@ -400,6 +411,25 @@
   
   .benefit-card h5 {
     color: #feca57;
+  }
+
+  .benefit-card p{
+    color: white;
+  }
+
+    /* ==================== FAQs Section Mobile ===================== */
+
+  #faqs h6,p{
+    color: white;
+    font-weight: lighter;
+  }
+
+  #faqs h3 {
+    box-shadow: 0 0px 0px rgba(0,0,0,0.1);
+  }
+
+  #faqs .faqs-container{
+    padding: 30px;
   }
 
   /* ==================== Buttons Mobile ===================== */
