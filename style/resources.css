@@ -338,40 +338,7 @@
 /* ==================== MOBILE YOUTHFUL THEME (768px and below) ===================== */
 @media (max-width: 768px) {
   
-  /* ==================== Global Mobile Styles ===================== */
-  body {
-    font-family: 'Fira Sans', sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  }
-  
-  h1, h2, h3 {
-    font-family: 'Outfit', sans-serif;
-  }
-
-  /* ==================== Hero Section Mobile ===================== */
-  #hero {
-    height: auto;
-    padding: 6rem 1rem 3rem;
-    text-align: center;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  }
-  
-  #hero .hero-content {
-    padding: 0 1rem;
-  }
-
-  #hero .hero-content h1 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #fff;
-  }
-  
-  #hero p {
-    font-size: 1rem;
-    margin-bottom: 2rem;
-    color: #f0f0f0;
-  }
-
+ 
   /* ==================== Content Sections Mobile ===================== */
   .container {
     width: 100%;
