@@ -328,3 +328,105 @@
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
+
+/* ==================== MOBILE YOUTHFUL THEME (768px and below) ===================== */
+@media (max-width: 768px) {
+  
+  /* ==================== Global Mobile Styles ===================== */
+  body {
+    font-family: 'Fira Sans', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Outfit', sans-serif;
+  }
+
+  /* ==================== Hero Section Mobile ===================== */
+  .hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  }
+  
+  .hero p {
+    color: #f0f0f0;
+  }
+
+  /* ==================== Content Sections Mobile ===================== */
+  .container {
+    margin: 1rem;
+    padding: 1rem;
+  }
+  
+  .section {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    margin: 1rem 0;
+    padding: 1.5rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  }
+  
+  .section h2 {
+    color: #667eea;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  /* ==================== Cards Mobile ===================== */
+  .benefit-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    margin: 1rem 0;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+    transition: all 0.3s ease;
+  }
+  
+  .benefit-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+  }
+  
+  .benefit-card h2 {
+    color: #fff;
+  }
+  
+  .benefit-card h5 {
+    color: #feca57;
+  }
+
+  /* ==================== Buttons Mobile ===================== */
+  .contact-btn {
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+  }
+  
+  .contact-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(255, 107, 107, 0.4);
+  }
+
+  /* ==================== Responsive Adjustments ===================== */
+  #benefits .container {
+    flex-direction: column;
+    margin: 1rem;
+  }
+  
+  .benefit-card {
+    flex: none;
+    width: 100%;
+  }
+}
