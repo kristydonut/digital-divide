@@ -76,12 +76,19 @@
 
 .issues-btn {
   font-weight: bold;
+<<<<<<< HEAD
   background: #fffdfd;
   color: #333333;
+=======
+  background: #800000;
+  color: #ffffff;
+  font-weight: lighter;
+>>>>>>> af51c0af9f53285cdc899bc0bde5aee48245de39
 }
 
 .issues-btn:hover {
   background: #e6e6e6;
+  color: black;
 }
 
 .solutions-btn {
@@ -259,8 +266,13 @@
 }
 
 .learn-btn {
+<<<<<<< HEAD
   background: #fffefe;
   color: #333333;
+=======
+  background: #fffdfd;
+  color: #000;
+>>>>>>> af51c0af9f53285cdc899bc0bde5aee48245de39
 }
 
 .learn-btn:hover {
