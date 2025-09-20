@@ -76,12 +76,14 @@
 
 .issues-btn {
   font-weight: bold;
-  background: #fff;
-  color: #020202;
+  background: #800000;
+  color: #ffffff;
+  font-weight: lighter;
 }
 
 .issues-btn:hover {
   background: #e6e6e6;
+  color: black;
 }
 
 .solutions-btn {
@@ -259,7 +261,7 @@
 }
 
 .learn-btn {
-  background: #fff;
+  background: #fffdfd;
   color: #000;
 }
 
