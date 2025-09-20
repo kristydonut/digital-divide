@@ -372,16 +372,10 @@
     font-family: 'Fira Sans', sans-serif;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #f5576c 75%, #4facfe 100%);
     background-size: 400% 400%;
-    animation: gradientShift 15s ease infinite;
     color: #333;
   }
   
-  @keyframes gradientShift {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-  }
-  
+
   h1, h2, h3 {
     font-family: 'Outfit', sans-serif;
   }
@@ -391,21 +385,10 @@
     height: 100vh;
     background: linear-gradient(135deg, #ff6b6b 0%, #feca57 25%, #48cae4 50%, #9d4edd 75%, #f72585 100%);
     background-size: 300% 300%;
-    animation: heroGradient 8s ease infinite;
     position: relative;
     overflow: hidden;
   }
-  
-  @keyframes heroGradient {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-  }
-  
-  .hero::before {
-    background: rgba(0, 0, 0, 0.2);
-  }
-  
+
   .hero_background {
     display: none; /* Hide video on mobile for better performance */
   }
@@ -415,44 +398,21 @@
     font-weight: 800;
     letter-spacing: -1px;
     margin-bottom: 1.5rem;
-    background: linear-gradient(45deg, #fff, #f0f9ff, #ddd6fe);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    animation: titleGlow 3s ease-in-out infinite alternate;
     text-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
-  }
-  
-  @keyframes titleGlow {
-    0% { filter: brightness(1) drop-shadow(0 0 10px rgba(255, 255, 255, 0.3)); }
-    100% { filter: brightness(1.2) drop-shadow(0 0 20px rgba(255, 255, 255, 0.6)); }
   }
   
   .hero_subtitle {
     font-size: 1.1rem;
     padding: 0 1rem;
-    color: #f0f9ff;
     font-weight: 400;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    animation: subtitleFloat 4s ease-in-out infinite;
-  }
-  
-  @keyframes subtitleFloat {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-5px); }
   }
   
   .hero_actions {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    animation: buttonsBounce 2s ease-in-out infinite;
   }
   
-  @keyframes buttonsBounce {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
-  }
   
   .btn {
     width: 280px;
@@ -468,20 +428,7 @@
     overflow: hidden;
   }
   
-  .btn::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-    transition: left 0.5s;
-  }
-  
-  .btn:hover::before {
-    left: 100%;
-  }
+
   
   .issues-btn {
     background: linear-gradient(135deg, #ff6b6b, #feca57);
@@ -545,11 +492,7 @@
     color: transparent;
     animation: titlePulse 2s ease-in-out infinite;
   }
-  
-  @keyframes titlePulse {
-    0%, 100% { transform: scale(1); }
-    50% { transform: scale(1.05); }
-  }
+
   
   .digital-divide-today p {
     font-size: 1rem;
@@ -589,11 +532,7 @@
     transform: scaleX(0);
     transition: transform 0.4s ease;
   }
-  
-  .stat-item:hover::before {
-    transform: scaleX(1);
-  }
-  
+
   .stat-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
@@ -697,10 +636,7 @@
     animation: missionTitleGlow 3s ease-in-out infinite alternate;
   }
   
-  @keyframes missionTitleGlow {
-    0% { filter: brightness(1); }
-    100% { filter: brightness(1.1); }
-  }
+
   
   .mission-text p {
     font-size: 1.1rem;
@@ -767,23 +703,6 @@
     overflow: hidden;
   }
   
-  .encouraging::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: 
-      radial-gradient(circle at 10% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 20%),
-      radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 20%);
-    z-index: 1;
-  }
-  
-  .encouraging > * {
-    position: relative;
-    z-index: 2;
-  }
   
   .encouraging h2 {
     font-size: 2.2rem;
@@ -791,19 +710,6 @@
     color: #fff;
     margin-bottom: 1rem;
     text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    animation: encouragingPulse 2s ease-in-out infinite;
-  }
-  
-  @keyframes encouragingPulse {
-    0%, 100% { transform: scale(1); }
-    50% { transform: scale(1.05); }
-  }
-  
-  .encouraging .container p {
-    font-size: 1.1rem;
-    color: #f0f9ff;
-    margin-bottom: 2rem;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   }
   
   .encouraging_actions {
