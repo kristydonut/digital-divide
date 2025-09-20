@@ -76,8 +76,8 @@
 
 .issues-btn {
   font-weight: bold;
-  background: #fff;
-  color: #020202;
+  background: #fffdfd;
+  color: #333333;
 }
 
 .issues-btn:hover {
@@ -259,8 +259,8 @@
 }
 
 .learn-btn {
-  background: #fff;
-  color: #000;
+  background: #fffefe;
+  color: #333333;
 }
 
 .learn-btn:hover {
@@ -354,7 +354,6 @@
 
 .mission-image {
   animation: rollSlide both;
-  animation-timeline: view(70% 5%);
 }
 
 
@@ -485,9 +484,9 @@
     font-weight: 800;
     color: #1a1a2e;
     margin-bottom: 1rem;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
+    color: #667eea;
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-clip: padding-box;
     color: transparent;
     animation: titlePulse 2s ease-in-out infinite;
   }
@@ -560,9 +559,9 @@
     font-weight: 800;
     color: #1a1a2e;
     margin-bottom: 0.5rem;
-    background: linear-gradient(135deg, #667eea, #764ba2);
-    background-clip: text;
-    -webkit-background-clip: text;
+    color: #667eea;
+    background-image: linear-gradient(135deg, #667eea, #764ba2);
+    background-clip: padding-box;
     color: transparent;
   }
   
@@ -628,9 +627,9 @@
     font-weight: 800;
     color: #1a1a2e;
     margin-bottom: 1.5rem;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
+    color: #667eea;
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-clip: padding-box;
     color: transparent;
     animation: missionTitleGlow 3s ease-in-out infinite alternate;
   }
