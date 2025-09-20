@@ -109,7 +109,7 @@ nav {
   font-family: 'Fira Sans', sans-serif;
   font-size: 0.95rem;
   text-decoration: none;
-  padding: 0.5rem 0.3;
+  padding: 0.5rem 0.4rem;
   color: #333;
   position: relative;
   transition: color 0.2s ease;
@@ -366,9 +366,10 @@ footer {
 
 .footer-social a:hover {
   background: #999;
-  box-shadow: rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); 
   color: #333;
 }
+
 
 .footer-bottom {
   text-align: center;
