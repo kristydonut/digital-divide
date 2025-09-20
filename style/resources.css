@@ -350,32 +350,42 @@
 
   /* ==================== Hero Section Mobile ===================== */
   #hero {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    padding: 2rem 1rem;
+    height: auto;
+    padding: 6rem 1rem 3rem;
     text-align: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   }
   
+  #hero .hero-content {
+    padding: 0 1rem;
+  }
+
   #hero .hero-content h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
     color: #fff;
   }
   
   #hero p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
     color: #f0f0f0;
   }
 
   /* ==================== Content Sections Mobile ===================== */
   .container {
-    margin: 1rem;
-    padding: 1rem;
+    width: 100%;
+    padding: 0 1rem;
   }
   
-  #resources .section {
-    background: rgba(255, 255, 255, 0.9);
-    backdrop-filter: blur(10px);
-    border-radius: 15px;
-    margin: 1rem 0;
-    padding: 1.5rem;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  .resource-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+
+  .resource-card {
+    margin: 0;
   }
   
   .section h2 {
@@ -390,13 +400,26 @@
   }
 
   /* ==================== Benefits Section Mobile ===================== */
+  #benefits .container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
   .benefit-card {
+    width: 100%;
+    margin: 1rem 0;
+    padding: 1.5rem;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
-    margin: 1rem 0;
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
     transition: all 0.3s ease;
+  }
+
+  .benefit-card img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 1rem;
   }
   
   .benefit-card:hover {
@@ -417,18 +440,33 @@
   }
 
     /* ==================== FAQs Section Mobile ===================== */
+  #faqs {
+    padding: 2rem 1rem;
+  }
 
-  #faqs h6,p{
-    color: white;
+  .faqs-container {
+    padding: 1rem;
+  }
+
+  .faq-item {
+    margin-bottom: 1.5rem;
+  }
+
+  .faq-item h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+  }
+
+  .faq-item p {
+    font-size: 1rem;
+    color: #f0f0f0;
     font-weight: lighter;
   }
 
-  #faqs h3 {
-    box-shadow: 0 0px 0px rgba(0,0,0,0.1);
-  }
-
-  #faqs .faqs-container{
-    padding: 30px;
+  #faqs h6 {
+    color: white;
+    font-weight: lighter;
   }
 
   /* ==================== Buttons Mobile ===================== */
