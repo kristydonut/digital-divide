@@ -44,10 +44,11 @@
   </header>
 
   <main>
+
+    
     <!-- Solutions in Action -->
     <div class="digi"> 
         <div class="digi-content"> 
-            <h4>Digital</h4> 
             <h1>Solutions in Action</h1> 
             <p>Bridging digital divide through innovative infrastructure, community programs, and collaborative technology solutions.</p> 
             <div class="digi-buttons"> 
@@ -72,7 +73,9 @@
                     <p>Connecting rural and underserved communities through comprehensive wireless infrastructure.</p> 
                     <a href="#" class="learn-more">Learn ›</a> 
                 </div> 
-                <div class="infra-img-placeholder"></div> 
+                <div class="infra-img-placeholder">
+                    <img src="style/images/sample-connectivity.png" alt="Free WiFi Network Infrastructure" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+                </div> 
             </div> 
     
             <div class="infra-card-content"> 
@@ -82,10 +85,15 @@
                     <p>Creating technology pathways in metropolitan areas to enhance digital literacy and access.</p> 
                     <a href="#" class="learn-more">Discover ›</a> 
                 </div> 
-                <div class="infra-img-placeholder-urban"></div> 
+                <div class="infra-img-placeholder-urban">
+                    <img src="style/images/sample-internet.png" alt="Digital Access Corridors in Urban Areas" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+                </div> 
             </div> 
         </section>
     </div>  
+
+
+
      <!-- Community Driven Digital Inclusion Section -->
     <div class="grassroots-container">
         <section class="grassroots">
@@ -105,7 +113,9 @@
                         <a href="#" class="learn-btn">Learn ›</a>
                     </div>
                 </div>
-                <div class="community-img-placeholder"></div>
+                <div class="community-img-placeholder">
+                    <img src="style/images/digitalLiteracy.jpg" alt="Technology Education Programs" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+                </div>
             </div>
 
             <div class="community-card-content">
@@ -118,10 +128,15 @@
                         <a href="#" class="explore-btn">Explore ›</a>
                     </div>
                 </div>
-                <div class="community-img-placeholder-local"></div>
+                <div class="community-img-placeholder-local">
+                    <img src="style/images/community-programs.jpg" alt="Community Technology Centers" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+                </div>
             </div>
         </section>
     </div>
+
+
+
         <!-- Digital Inclusion Case Studies Section -->
     <div class="success-container">
         <section class="success">
@@ -132,7 +147,9 @@
 
         <section class="case-studies">
             <div class="case-study-left">
-                <div class="case-study-img-left"></div>
+                <div class="case-study-img-left">
+                    <img src="style/images/sample-education.png" alt="Educational Technology Transformation in Rural Areas" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+                </div>
                 <div class="case-study-content-right">
                     <h4>Rural</h4>
                     <h2>Educational Technology Transformation</h2>
@@ -142,7 +159,9 @@
             </div>
 
             <div class="case-study-right">
-                <div class="case-study-img-right"></div>
+                <div class="case-study-img-right">
+                    <img src="style/images/sample-education2.png" alt="Community Connectivity Initiative in Urban Areas" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+                </div>
                 <div class="case-study-content">
                     <h4>Urban</h4>
                     <h2>Community Connectivity Initiative</h2>
@@ -172,7 +191,9 @@
         </section>
 
         <section class="volunteer-section">
-            <div class="volunteer-img"></div>
+            <div class="volunteer-img">
+                <img src="style/images/teaching-oldpeople.jpg" alt="Community Technology Support Volunteers" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+            </div>
             <div class="volunteer-content">
                 <h4>Volunteer</h4>
                 <h2>Community Technology Support</h2>
@@ -191,26 +212,27 @@
             <h1>Share Your Story</h1>
             <p>Your experience can inspire and drive digital inclusion efforts nationwide.</p>
             
-            <form class="story-form">
+            <form class="story-form" action="#" method="POST">
                 <div class="form-row">
                     <div class="form-group">
-                        <label for="first-name">First name</label>
-                        <input type="text" id="first-name" name="first-name">
+                        <label for="first-name">First name *</label>
+                        <input type="text" id="first-name" name="first-name" required>
                     </div>
                     <div class="form-group">
-                        <label for="last-name">Last name</label>
-                        <input type="text" id="last-name" name="last-name">
+                        <label for="last-name">Last name *</label>
+                        <input type="text" id="last-name" name="last-name" required>
                     </div>
                 </div>
                 
                 <div class="form-row">
                     <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
                     </div>
                     <div class="form-group">
                         <label for="phone">Phone number</label>
-                        <input type="tel" id="phone" name="phone">
+                        <input type="tel" id="phone" name="phone" pattern="[0-9+\-\s\(\)]+">
+                        <small class="help-text">Format: +1 (555) 123-4567</small>
                     </div>
                 </div>
                 
@@ -259,14 +281,14 @@
                 </div>
                 
                 <div class="form-group full-width">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" placeholder="Tell us your digital journey..."></textarea>
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" placeholder="Tell us your digital journey..." required rows="5"></textarea>
                 </div>
                 
                 <div class="form-group full-width">
                     <div class="checkbox-option">
-                        <input type="checkbox" id="terms" name="terms">
-                        <label for="terms">I accept the Terms and Conditions</label>
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">I accept the Terms and Conditions *</label>
                     </div>
                 </div>
                 
@@ -342,6 +364,7 @@
                 </ul>
             </div>
     </footer>
+
 
 </body>
 </html>

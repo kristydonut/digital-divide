@@ -18,11 +18,9 @@ body {
 } 
 
 .digi { 
+    padding-top: 70px;
     height: 500px; 
-    background-image: url('digital_solutions.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: linear-gradient(135deg, #800000 0%, #852525 50%, #a52a2a 100%);
     position: relative; 
     display: flex; 
     justify-content: center; 
@@ -36,11 +34,6 @@ body {
     padding: 0 20px; 
 } 
 
-.digi h4 { 
-    font-size: 20px; 
-    margin-bottom: 25px; 
-    margin-top: 25px;
-} 
 
 .digi h1 { 
     font-size: 50px; 
@@ -60,7 +53,7 @@ body {
 
 .digi-btn-primary { 
     background-color: white; 
-    color: rgb(0, 0, 0); 
+    color: #800000; 
     border-radius: 30px; 
     border-style: none; 
     border-width: 1px;;
@@ -68,12 +61,15 @@ body {
     padding: 15px 25px; 
     text-decoration: none; 
     font-weight: bold;
+    transition: all 0.3s ease;
 } 
 
 .digi-btn-primary:hover { 
-    background-color: transparent; 
+    background-color: #852525; 
     color: white; 
     border-style: solid; 
+    border-color: white;
+    transform: translateY(-2px);
 } 
 
 .digi-btn-secondary { 
@@ -81,16 +77,19 @@ body {
     color: white; 
     border-radius: 30px; 
     border-style: solid; 
-    border-width: 1px;
+    border-width: 2px;
+    border-color: white;
     padding: 15px 25px; 
     text-decoration: none; 
     margin-left: 20px; 
     font-weight: bold;
+    transition: all 0.3s ease;
 } 
 
 .digi-btn-secondary:hover { 
     background-color: white; 
-    color: rgb(0, 0, 0); 
+    color: #800000; 
+    transform: translateY(-2px);
 } 
 
 /*** Infrastructure ***/ 
@@ -112,9 +111,12 @@ body {
 
 .infa h5 { 
     font-size: 16px; 
-    color: white; 
+    color: #f15b2a; 
     margin-bottom: 20px; 
     text-align: center; 
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 } 
 
 .infa h1 { 
@@ -202,10 +204,14 @@ body {
 
 .learn-more { 
     display: inline-block; 
-    color: white; 
+    color: #f15b2a; 
     text-decoration: none; 
     font-weight: bold; 
+    transition: color 0.3s ease;
+}
 
+.learn-more:hover {
+    color: #800000;
 } 
 
 /* Community Driven Digital Inclusion Section */
@@ -226,15 +232,18 @@ body {
 
 .grassroots h5 {
     font-size: 16px;
-    color: black;
+    color: #f15b2a;
     margin-bottom: 20px;
     text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .grassroots h1 {
     font-size: 50px;
     margin-bottom: 20px;
-    color: black;
+    color: #800000;
     max-width: 700px; 
     margin: 0 auto 20px auto;
 }
@@ -243,7 +252,7 @@ body {
     font-size: 18px;
     max-width: 700px;
     margin: 0 auto 80px auto; 
-    color: black;
+    color: #333;
 }
 
 .community-card {
@@ -322,14 +331,21 @@ body {
 .support-btn, .engage-btn {
     display: inline-block;
     padding: 15px 20px;
-    background-color: rgb(222, 215, 215);
-    color: black;
-    border: 1px solid #bcb8b8;
+    background-color: #f15b2a;
+    color: white;
+    border: 1px solid #f15b2a;
     text-decoration: none;
     margin-right: 15px;
     height: 50px;
+    transition: all 0.3s ease;
     font-weight: bold;
     border-radius: 25px;
+}
+
+.support-btn:hover, .engage-btn:hover {
+    background-color: #800000;
+    border-color: #800000;
+    transform: translateY(-2px);
 }
 
 .learn-btn, .explore-btn {
@@ -353,9 +369,12 @@ body {
 
 .success h5 {
     font-size: 16px;
-    color: white;
+    color: #f15b2a;
     margin-bottom: 20px;
     text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .success h1 {
@@ -483,14 +502,17 @@ body {
 
 .action h5 {
     font-size: 16px;
-    color: black;
+    color: #f15b2a;
     margin-bottom: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .action h1 {
     font-size: 36px;
     margin-bottom: 15px;
-    color: black;
+    color: #800000;
     max-width: 900px; 
     margin: 0 auto 20px auto; 
 }
@@ -499,7 +521,7 @@ body {
     font-size: 18px;
     max-width: 700px;
     margin: 0 auto 40px auto;;
-    color: black;
+    color: #333;
 }
 
 .action-buttons {
@@ -641,11 +663,13 @@ body {
 }
 
 .connect h5 {
-    color: white;
+    color: #f15b2a;
     font-size: 15px;
     text-transform: uppercase;
     margin-bottom: 20px;
     margin-top: 50px;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
 .connect h1 {
@@ -768,20 +792,38 @@ body {
 }
 
 .submit-btn {
-    background-color: #18869e;
-    color: rgb(219, 218, 218);
+    background-color: #800000;
+    color: white;
     border: none;
-    border-radius: 20px;
-    padding: 12px 24px;
-    font-size: 15px;
+    border-radius: 25px;
+    padding: 15px 30px;
+    font-size: 16px;
     font-weight: bold;
     cursor: pointer;
-    margin-top: 10px;
+    margin-top: 20px;
+    transition: all 0.3s ease;
 }
 
 .submit-btn:hover {
-    background-color: white;
-    color: #18869e;
+    background-color: #f15b2a;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(128, 0, 0, 0.3);
+}
+
+/* ==================== Form Styles ===================== */
+.help-text {
+    color: #6c757d;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+    display: block;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #f15b2a;
+    box-shadow: 0 0 0 0.2rem rgba(241, 91, 42, 0.25);
 }
 
 @media (max-width: 768px) { 
