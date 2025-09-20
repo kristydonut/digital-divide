@@ -310,6 +310,149 @@ input[type="radio"] {
   text-align: justify;
 }
 
+/* ===================== Animation ===================== */
+
+/* ---------- Fading from right to left (normal) ---------- */
+@keyframes fadeFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ---------- Fading from right to left (centered content) ---------- */
+@keyframes fadeFromRightCentered {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) translateX(0);
+  }
+}
+
+/* ---------- Fading from left to right (normal) ---------- */
+@keyframes fadeFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ---------- Fading from left to right (centered content) ---------- */
+@keyframes fadeFromLeftCentered {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) translateX(0);
+  }
+}
+
+/* ---------- Auto Show (pop up style) ---------- */
+@keyframes autoShowAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(200px) scale(0.3);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* ---------- Scale In Forward Bottom ---------- */
+@keyframes scale-in-forward-bottom {
+  0% {
+    transform: scale(0);
+    transform-origin: 100% 100%;
+  }
+  100% {
+    transform: scale(1);
+    transform-origin: 100% 100%;
+  }
+}
+
+/* ---------- Roll from right to left ---------- */
+@keyframes roll-from-right-to-left {
+  0% {
+    opacity: 0;
+    transform: translateX(200px) rotate(90deg) scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) rotate(0deg) scale(1);
+  }
+}
+
+/* ---------- Roll from left to right ---------- */
+@keyframes roll-from-left-to-right {
+  0% {
+    opacity: 0;
+    transform: translateX(-200px) rotate(-90deg) scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) rotate(0deg) scale(1);
+  }
+}
+
+/* ===================== Apply Animations ===================== */
+
+/* Fade from right (normal flow elements) */
+.issues-intro h1,
+.issues-intro p, 
+.samples h1 {
+  animation: fadeFromRight 1s cubic-bezier(0.64, 0, 0.78, 0) forwards;
+}
+
+/* Fade from right (centered elements like slide-content) */
+.slide-content {
+  animation: fadeFromRightCentered 1s cubic-bezier(0.64, 0, 0.78, 0) forwards;
+}
+
+/* Fade from left (normal flow elements) */
+.impact_cards {
+  animation: fadeFromLeft 1s cubic-bezier(0.64, 0, 0.78, 0) forwards;
+}
+
+/* Auto show (pop-up items) */
+.cause_item {
+  animation: autoShowAnimation 0.7s ease-out both;
+}
+
+/* Scale in forward bottom */
+.source,
+.data_statistics_title,
+.causes_title,
+.table_description,
+.impact_title,
+figcaption {
+  animation: scale-in-forward-bottom 1s linear forwards;
+}
+
+/* Roll from right */
+.chart_right {
+  animation: roll-from-right-to-left 1s ease-out forwards;
+}
+
+/* Roll from left */
+.chart_left {
+  animation: roll-from-left-to-right 1s ease-out forwards;
+}
+
+
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
   .navbar__links {
