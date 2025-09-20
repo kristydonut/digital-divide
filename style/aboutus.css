@@ -719,7 +719,6 @@
 
 .about_visual {
     animation: bounceInTop 1s ease 0s 1 normal both;
-    animation-timeline: view(50% 2%);
 }
 /* Scale In Forward from the right bottom side (may timeline) */
 @keyframes scaleInBottomRight {
@@ -739,9 +738,24 @@
 .text-content .mission-label,
 .btn-primary {
     animation: scaleInBottomRight 1s linear 0s 1 normal both;
-    animation-timeline: view(70% 5%);
 }
 
+/* Fade In (from left to right side pero may timeline) */
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.about_paragraph {
+    animation: fadeInLeft 2s cubic-bezier(0.64, 0, 0.78, 0) 0s 1 normal both;
+}
 
 /* ==================== Responsive Design ===================== */
 @media (max-width: 768px) {
