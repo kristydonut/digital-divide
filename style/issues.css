@@ -214,19 +214,33 @@ input[type="radio"] {
 
 @media (max-width: 768px) {
   .samples {
-    height: 35vh;
+    height: auto;
     min-height: 500px;
+    overflow: visible;
+  }
+
+  .slider {
+    height: auto;
+  }
+
+  .slides {
+    height: auto;
+  }
+
+  .slide {
+    height: auto;
   }
 
   .slide-content {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 1rem;
-    right: 1rem;
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
     max-width: 90%;
-    text-align: left;
+    margin: 2rem auto;
     padding: 1rem;
+    text-align: left;
+    color: #fff;
   }
 
   .slide-content p {
@@ -238,6 +252,16 @@ input[type="radio"] {
   .btn-readmore {
     font-size: 0.95rem;
     padding: 0.5rem 1rem;
+  }
+
+  .navigation {
+    position: relative;
+    bottom: auto;
+    margin: 1rem auto 0;
+    display: flex;
+    justify-content: center;
+    gap: 0.6rem;
+    z-index: 5;
   }
 }
 
@@ -324,18 +348,6 @@ input[type="radio"] {
   }
 }
 
-/* ---------- Fading from right to left (centered content) ---------- */
-@keyframes fadeFromRightCentered {
-  0% {
-    opacity: 0;
-    transform: translate(-50%, -50%) translateX(50px);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(-50%, -50%) translateX(0);
-  }
-}
-
 /* ---------- Fading from left to right (normal) ---------- */
 @keyframes fadeFromLeft {
   0% {
@@ -345,18 +357,6 @@ input[type="radio"] {
   100% {
     opacity: 1;
     transform: translateX(0);
-  }
-}
-
-/* ---------- Fading from left to right (centered content) ---------- */
-@keyframes fadeFromLeftCentered {
-  0% {
-    opacity: 0;
-    transform: translate(-50%, -50%) translateX(-50px);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(-50%, -50%) translateX(0);
   }
 }
 
@@ -415,11 +415,6 @@ input[type="radio"] {
 .issues-intro p, 
 .samples h1 {
   animation: fadeFromRight 1s cubic-bezier(0.64, 0, 0.78, 0) forwards;
-}
-
-/* Fade from right (centered elements like slide-content) */
-.slide-content {
-  animation: fadeFromRightCentered 1s cubic-bezier(0.64, 0, 0.78, 0) forwards;
 }
 
 /* Fade from left (normal flow elements) */
