@@ -79,6 +79,7 @@
   padding: 80px 40px;
   max-width: 1200px;
   margin: auto;
+  scroll-margin-top: 80px;
 }
 
 #resources .section-label{
@@ -185,6 +186,7 @@
   padding: 60px 20px;
   background: #f9f9f9;
   text-align: center;
+  scroll-margin-top: 80px;
 }
 
 #benefits h6 {
