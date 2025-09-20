@@ -340,7 +340,7 @@
   animation: slideBottom 2s cubic-bezier(0.64, 0, 0.78, 0) 0s 1 normal both;
 }
 
-/* ------- Rool from the left into right side ------- */
+/* ------- Roll from the left into right side ------- */
 @keyframes rollSlide {
   from {
     opacity: 0;
