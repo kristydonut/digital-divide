@@ -56,9 +56,10 @@ a {
 .samples {
   position: relative;
   width: 100%;
-  height: 75vh;
+  height: calc(75vh + 6rem);
   min-height: 420px;
   overflow: hidden;
+  padding-bottom: 100px; 
 }
 
 .samples h1 {
@@ -71,9 +72,20 @@ a {
 }
 
 .slider {
-  position: relative;
+  position: relative; /* already here */
   width: 100%;
-  height: 100%;
+  height: 75vh;
+  overflow: hidden; /* add this to clip anything overflowing */
+}
+
+.navigation {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 18px; /* increase this until dots sit where you want */
+  display: flex;
+  gap: 0.6rem;
+  z-index: 5;
 }
 
 input[type="radio"] {
