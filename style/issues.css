@@ -1111,3 +1111,70 @@ figcaption {
     border: 1px solid #fff;
   }
 }
+
+/* ==================== Container Queries ==================== */
+
+/* Causes Section */
+.causes {
+  container-type: inline-size;
+  container-name: causes-container;
+}
+
+@container causes-container (max-width: 700px) {
+  .causes_grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .cause_item {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .cause_icon {
+    align-self: center;
+  }
+}
+
+/* Statistics Section */
+.stats_chart-card {
+  container-type: inline-size;
+  container-name: stat-card;
+}
+
+@container stat-card (max-width: 600px) {
+  .stats_chart-card {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .chart_right h3 {
+    font-size: 1.2rem;
+  }
+
+  .chart_right p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Impact Section */
+.impact_cards {
+  container-type: inline-size;
+  container-name: impact-container;
+}
+
+@container impact-container (max-width: 700px) {
+  .impact_cards {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .impact_card {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
+}
+
