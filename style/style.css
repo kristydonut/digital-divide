@@ -137,9 +137,9 @@ nav {
 
 /* CTA Button */
 .navbar_cta {
-  background: #5a0d0d;      /* desktop background */
+  background: #5a0d0d;     
   color: #fff !important;
-  padding: 0.75rem 2rem;     /* increased horizontal padding for bigger look */
+  padding: 0.75rem 2rem;    
   border-radius: 4px;
   font-size: 0.95rem;
   font-weight: 500;
@@ -154,9 +154,9 @@ nav {
 }
 
 #navbar_cta {
-  background: #5a0d0d;      /* desktop background */
+  background: #5a0d0d;    
   color: #fff !important;
-  padding: 0.75rem 2rem;     /* increased horizontal padding for bigger look */
+  padding: 0.75rem 2rem;    
   border-radius: 4px;
   font-size: 0.95rem;
   font-weight: 500;
@@ -402,4 +402,56 @@ footer {
     #nav-toggle:checked ~ .icon-burger .line:nth-child(2) {
         opacity: 0;
     }
+}
+
+/* ================= Responsive for Footer ================= */
+@media (max-width: 768px) {
+  footer {
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .footer-left {
+    margin-right: 0;
+  }
+
+  .footer-logo {
+    margin: 0 auto 10px; 
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap: 10px; 
+  }
+
+  .footer-text {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+
+  .footer-right {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .footer-social {
+    max-width: none;
+    grid-template-columns: repeat(5, 40px);
+    gap: 10px;
+  }
+
+  .footer-bottom {
+    font-size: 10px;
+  }
+
+  .footer-legal {
+    flex-direction: column;
+    gap: 8px;
+  }
 }

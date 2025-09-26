@@ -868,7 +868,7 @@ figcaption {
   background: rgba(255, 255, 255, 0.1);
 }
 
-/* ==================== Mobile Pastel Theme ==================== */
+/* ==================== Responsiveness ==================== */
 @media (max-width: 768px) {
   /* Body & Fonts */
   body {
@@ -879,7 +879,7 @@ figcaption {
 
   /* Issues Intro Section */
   .issues-intro {
-    background-color: #ffe4eb;
+    background: linear-gradient(135deg, #f7a8bd 0%, #f7c7c7 100%);
     padding: 3rem 1.5rem;
   }
 
@@ -976,11 +976,7 @@ figcaption {
 
   /* Statistics Section */
   .data_statistics {
-    background: linear-gradient(
-      135deg,
-      #f0eafc 0%,
-      #e9d7ff 100%
-    ); 
+    background: linear-gradient(135deg, #e3d6ff 30%, #caa1fc 70%);
     padding: 1rem;
     border-radius: 12px;
   }
