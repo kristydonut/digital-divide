@@ -193,79 +193,6 @@ nav {
   pointer-events: none;
 }
 
-/* Responsive */
-@media screen and (max-width: 768px) {
-  nav {
-    height: 70px;  
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); 
-  }
-
-  .navbar_links {
-    position: fixed;
-    top: 70px; 
-    bottom: 100%;
-    left: 0;
-    right: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.9);
-    padding: 2rem 0;
-    gap: 2rem;
-    transition: all 0.3s ease-in-out;
-    opacity: 0;
-    visibility: hidden;
-  }
-
-  #nav-toggle:checked ~ .navbar_links {
-    bottom: 0;
-    opacity: 1;
-    visibility: visible;
-  }
-
-  .navbar_links li {
-    width: 100%;
-    text-align: center;
-  }
-
-  .navbar_links li a {
-    color: #fff;
-    font-size: 1.2rem;
-    padding: 0.5rem 2rem;
-    width: 100%;
-    display: block;
-  }
-
-  .navbar_links li a:hover,
-  .navbar_links li a.active {
-    background-color: rgba(255, 255, 255, 0.1);
-  }
-
-  .navbar_cta {
-    background: none;       
-    color: #fff !important; 
-    padding: 0.5rem 2rem;      
-    border-radius: 0;       
-    text-align: center;
-    border: 2px solid #fff;
-    margin: 0 2rem;    
-  }
-
-  .icon-burger {
-    display: block;
-  }
-
-  #nav-toggle:checked ~ .icon-burger .line:nth-child(1) {
-    transform: translateY(10px) rotate(225deg);
-  }
-  #nav-toggle:checked ~ .icon-burger .line:nth-child(3) {
-    transform: translateY(-10px) rotate(-225deg);
-  }
-  #nav-toggle:checked ~ .icon-burger .line:nth-child(2) {
-    opacity: 0;
-  }
-}
-
 /* ======================= Footer ======================= */
 footer {
   background: #2b2b2b;
@@ -373,11 +300,11 @@ footer {
 
 .footer-bottom {
   text-align: center;
-  font-size: 8px;      /* smaller text */
-  color: #777;          /* lighter gray for subtle look */
-  margin-top: 40px;     /* spacing above it */
-  padding-top: 20px;    /* extra padding if you want separation */
-  border-top: 1px solid #444; /* optional divider line */
+  font-size: 8px;
+  color: #777;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #444;
 }
 
 .footer-bottom p {
@@ -386,7 +313,7 @@ footer {
 
 .footer-legal {
   display: flex;
-  justify-content: center; /* center horizontally */
+  justify-content: center;
   gap: 15px;
   list-style: none;
   padding: 0;
@@ -395,11 +322,84 @@ footer {
 
 .footer-legal a {
   color: #999;
-  font-size: 12px;   /* small links to match copyright */
+  font-size: 12px;
   text-decoration: none;
   transition: color 0.3s;
 }
 
 .footer-legal a:hover {
   color: #f15b2a;
+}
+
+/* ======================= Responsive for NavBar ======================= */
+@media (max-width: 768px) {
+    nav {
+        height: 70px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    }
+
+    .navbar_links {
+        position: fixed;
+        top: 70px;
+        bottom: 100%;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.9);
+        padding: 2rem 0;
+        gap: 2rem;
+        transition: all 0.3s ease-in-out;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    #nav-toggle:checked ~ .navbar_links {
+        bottom: 0;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .navbar_links li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar_links li a {
+        color: #fff;
+        font-size: 1.2rem;
+        padding: 0.5rem 2rem;
+        width: 100%;
+        display: block;
+    }
+
+    .navbar_links li a:hover,
+    .navbar_links li a.active {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .navbar_cta {
+        background: none;
+        color: #fff !important;
+        padding: 0.5rem 2rem;
+        border-radius: 5px;
+        text-align: center;
+        border: 2px solid #fff;
+        margin: 0;
+    }
+
+    .icon-burger {
+        display: block;
+    }
+
+    #nav-toggle:checked ~ .icon-burger .line:nth-child(1) {
+        transform: translateY(10px) rotate(225deg);
+    }
+    #nav-toggle:checked ~ .icon-burger .line:nth-child(3) {
+        transform: translateY(-10px) rotate(-225deg);
+    }
+    #nav-toggle:checked ~ .icon-burger .line:nth-child(2) {
+        opacity: 0;
+    }
 }
