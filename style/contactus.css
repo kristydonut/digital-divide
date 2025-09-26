@@ -264,197 +264,122 @@
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   opacity: 0.8;
 }
-/* ======================= Responsive Breakpoints ======================= */
+/* ======================= MOBILE YOUTHFUL THEME ======================= */
+@media (max-width: 768px) {
+    .contact-us-section {
+        min-height: auto;
+    }
 
-/* Large tablets and small desktops */
-@media screen and (max-width: 1024px) {
-  .contact-us-container {
-    padding: 120px 20px 60px;
-  }
+    .contact-us-bg {
+        background: linear-gradient(rgba(255, 200, 240, 0.6), rgba(180, 220, 255, 0.7)),
+        url("/style/images/youth.jpg");
+        background-position: center;
+        background-size: cover;
+    }
 
-  .contact-us-content {
-    gap: 30px;
-  }
+    .contact-us-container {
+        padding: 80px 20px 40px;
+    }
 
-  .contact-info-card {
-    flex: 0 0 350px;
-    padding: 30px;
-  }
+    .contact-us-content {
+        flex-direction: column;
+        gap: 20px;
+    }
 
-  .contact-form {
-    padding: 30px;
-  }
+    /* Title */
+    .contact-title h1 {
+        color: #ff5e9c; /* Vibrant pink */
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+    }
+
+    .contact-title p {
+        color: #444;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    /* Contact Info Card */
+    .contact-info-card {
+        background: linear-gradient(135deg, #ff85a1, #ffda77);
+        color: #333;
+        border-radius: 15px;
+        padding: 25px;
+        flex: none;
+    }
+
+    .contact-info-card h2 {
+        font-size: 18px;
+        color: #fff;
+    }
+
+    .contact-info-card > p {
+        color: #fff9f9;
+    }
+
+    .contact-item span {
+        color: #fff;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .social-link {
+        background: #fff;
+        border: 2px solid #ff85a1;
+    }
+
+    .social-link:hover {
+        background: #ff85a1;
+        border-color: #ff5e9c;
+    }
+
+    /* Contact Form */
+    .contact-form {
+        padding: 25px;
+        border-radius: 15px;
+        background: #ffffff;
+    }
+
+    .form-group label {
+        color: #ff5e9c;
+        font-weight: 600;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        border-bottom: 2px solid #ffb347;
+        font-size: 15px;
+        border-radius: 8px;
+        background: #fff9f9;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+        border-bottom-color: #ff5e9c;
+    }
+
+    .radio-item input[type="radio"] {
+        accent-color: #ff85a1;
+    }
+
+    .submit-btn {
+        background: linear-gradient(135deg, #ff85a1, #ffb347);
+        border-radius: 25px;
+        padding: 12px 25px;
+        font-weight: 700;
+        float: none;
+        display: block;
+        margin: 20px auto 0;
+        transition: all 0.3s ease;
+    }
+
+    .submit-btn:hover {
+        opacity: 0.9;
+        transform: scale(1.05);
+    }
 }
 
-/* Tablets */
-@media screen and (max-width: 768px) {
-  .contact-us-container {
-    padding: 100px 15px 40px;
-  }
 
-  .contact-title {
-    margin-bottom: 40px;
-  }
 
-  .contact-us-content {
-    flex-direction: column;
-    gap: 30px;
-  }
-
-  .contact-info-card {
-    flex: none;
-    width: 100%;
-    padding: 30px;
-  }
-
-  .contact-form {
-    width: 100%;
-    padding: 30px;
-  }
-
-  .form-row {
-    gap: 15px;
-  }
-
-  .radio-group {
-    gap: 20px;
-  }
-
-  .social-links {
-    justify-content: center;
-    gap: 20px;
-  }
-}
-
-/* iPhone XR, 12, 13, 14 and similar devices */
-@media screen and (max-width: 430px) {
-  .contact-us-container {
-    padding: 80px 15px 30px;
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  .contact-title {
-    margin-bottom: 30px;
-    text-align: center;
-  }
-
-  .contact-us-content {
-    gap: 20px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .contact-info-card {
-    padding: 20px;
-    width: 100%;
-    box-sizing: border-box;
-    flex: none;
-  }
-
-  .contact-info-card::before {
-    width: 200px;
-    height: 200px;
-    bottom: -100px;
-    right: -50px;
-  }
-
-  .contact-form {
-    padding: 20px;
-    width: 100%;
-    box-sizing: border-box;
-    flex: none;
-  }
-
-  .form-row {
-    flex-direction: column;
-    gap: 0;
-    width: 100%;
-  }
-
-  .form-group {
-    margin-bottom: 20px;
-    width: 100%;
-  }
-
-  .form-group input,
-  .form-group textarea {
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  .radio-group {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .submit-btn {
-    float: none;
-    width: 100%;
-    padding: 15px;
-    margin-top: 10px;
-    box-sizing: border-box;
-  }
-
-  .contact-item {
-    margin-bottom: 20px;
-  }
-
-  .contact-item span {
-    font-size: 14px;
-  }
-
-  .social-links {
-    gap: 15px;
-    margin-top: 30px;
-    justify-content: center;
-  }
-
-  .social-link {
-    width: 35px;
-    height: 35px;
-  }
-}
-
-/* Mobile phones - smaller devices */
-@media screen and (max-width: 375px) {
-  .contact-us-container {
-    padding: 80px 10px 30px;
-  }
-
-  .contact-info-card {
-    padding: 18px;
-  }
-
-  .contact-form {
-    padding: 18px;
-  }
-}
-
-/* Extra small devices */
-@media screen and (max-width: 320px) {
-  .contact-us-container {
-    padding: 70px 10px 20px;
-  }
-
-  .contact-info-card {
-    padding: 15px;
-  }
-
-  .contact-form {
-    padding: 15px;
-  }
-
-  .contact-item-icon {
-    width: 18px;
-    height: 18px;
-    margin-right: 15px;
-  }
-
-  .social-link {
-    width: 32px;
-    height: 32px;
-  }
-}
